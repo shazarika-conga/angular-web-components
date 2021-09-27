@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import 'conga-component-library';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'wc-angular';
+
+  handleClick(event: MouseEvent): void {
+    console.log(event);
+  }
 }
